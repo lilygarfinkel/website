@@ -5,8 +5,8 @@
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: 'Roboto Mono', serif;
+  --font-family-header: 'Roboto Mono';
 }
 
 /* Basic page style resets */
@@ -17,19 +17,6 @@
   display: none !important;
 }
 
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
 .divider {
   padding: 0 1rem;
 }
@@ -38,7 +25,7 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: HK Grotesk;
+ font-family: 'Roboto Mono', serif;
   background-color: var(--color-bg);
 }
 
@@ -56,22 +43,13 @@ body {
   justify-content: center;
 }
 
-/* Very light scaling for our illustration */
 .title {
   color: #ff206e;
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
+ font-family: 'Roboto Mono', serif;
+  font-style: 'Thin 100';
   font-size: 100px;
   line-height: 105%;
   margin: 0;
-}
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
 }
 
 /* Instructions */
@@ -80,8 +58,7 @@ body {
 }
 
 /* Button - Add it from the README instructions */
-button,
-input {
+button {
   font-family: inherit;
   font-size: 100%;
   background: #FFFFFF;
@@ -89,7 +66,6 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0.5rem 1rem;
-  transition: 500ms;
 }
 
 /* Subheading */
@@ -100,15 +76,3 @@ p {
   color: #FFFFFF;
 }
 
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
-}
