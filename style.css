@@ -9,15 +9,6 @@
   --font-family-header: 'Inconsolata';
 }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-
 body {
   font-family: 'Inconsolata', monospace ;
   color: #ffffff;
@@ -30,6 +21,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.tabs{
+   padding: 0rem 1.6rem;
+}
 
 .title {
   color: #ff206e;
@@ -37,14 +31,6 @@ body {
   font-size: 50px;
   line-height: 105%;
   margin: 0;
-}
-
-
-.tabs{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .contentSpace{
@@ -67,7 +53,7 @@ button {
   padding: 0.5rem 1rem;
 }
 
-/* Subheading */
+/* Subheadings */
 h2 {
   color: #fbff12;
 }
