@@ -14,16 +14,19 @@ body {
   color: #ffffff;
   background-color: var(--color-bg);
 }
-.tabs{
-  display:flex;
-  flex-direction: row;
-}
+
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .title {
@@ -35,7 +38,7 @@ body {
 }
 
 #projPage{
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
   height:300px;
   background: #202020;
