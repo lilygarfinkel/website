@@ -11,58 +11,54 @@ console.log("Hello 🌎");
 Make the "Click me!" button move when the visitor clicks it:
 - First add the button to the page by following the "Next steps" in the README
 */
-[...document.getElementsByTagName("button")].forEach(function(item) {
-item.addEventListener('click', function() {
-  var id = this.id;
-  switch(id){
-    case 'mqp':
-      console.log('mqp');
-      break
-     case 'iqp':
-      console.log('iqp');
-      break
-       case 'ai':
-      console.log('ai');
-      break
-       case 'algo':
-      console.log('algo');
-      break
-       case 'dviz':
-      console.log('dviz');
-      break
-       case 'wbwr':
-      console.log('wbwr');
-      break
-       case 'softeng':
-      console.log('softeng');
-      break
-  }})
-  item.addEventListener('mouseover', function() {
-  var id = this.id;
-  switch(id){
-    case 'mqp':
-      console.log('mqp');
-      break
-     case 'iqp':
-      console.log('iqp');
-      break
-       case 'ai':
-      console.log('ai');
-      break
-       case 'algo':
-      console.log('algo');
-      break
-       case 'dviz':
-      console.log('dviz');
-      break
-       case 'wbwr':
-      console.log('wbwr');
-      break
-       case 'softeng':
-      console.log('softeng');
-      break
-  }
-})})
+[...document.getElementsByTagName("button")].forEach(function (item) {
+  item.addEventListener("click", function () {
+    var id = this.id;
+    switch (id) {
+      case "ai":
+        console.log("ai");
+        break;
+      case "algo":
+        console.log("algo");
+        break;
+      case "dviz":
+        console.log("dviz");
+        break;
+      case "wbwr":
+        console.log("wbwr");
+        break;
+      case "softeng":
+        console.log("softeng");
+        break;
+    }
+  });
+  item.addEventListener("mouseover", function () {
+    var id = this.id;
+    switch (id) {
+      case "mqp":
+        console.log("mqp");
+        break;
+      case "iqp":
+        console.log("iqp");
+        break;
+      case "ai":
+        console.log("ai");
+        break;
+      case "algo":
+        console.log("algo");
+        break;
+      case "dviz":
+        console.log("dviz");
+        break;
+      case "wbwr":
+        console.log("wbwr");
+        break;
+      case "softeng":
+        console.log("softeng");
+        break;
+    }
+  });
+});
 
 // This is a single line JS comment
 /*
