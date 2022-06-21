@@ -61,7 +61,8 @@ body {
 button {
   font-family: inherit;
   font-size: 100%;
-  background: #FFFFFF;
+  
+  background: #46494c;
   border: 1px solid #41ead4;
   box-sizing: border-box;
   border-radius: 4px;
