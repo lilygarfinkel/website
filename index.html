@@ -16,24 +16,20 @@
   <body>
     <div class="wrapper">
       <div class="content" role="main">
-        
-<!-- headings  -->
+        <!-- headings  -->
         <h1 class="title">Lillian Garfinkel</h1>
         <h2>BS Computer Science 2022</h2>
         <h3>Worcester Polytechnic Institute</h3>
-        
-        
-<!-- 'tab' buttons -->
+
+        <!-- 'tab' buttons -->
         <div class="tabs">
-          <button>Projects</button>
-          <button>Assignments</button>
+          <button id="proj">Projects</button>
+          <button id="assgn">Assignments</button>
         </div>
+        <div id="projT" class="contentSpace">test
         
-          <p>
-            Below you can check out the long- term research projects I worked on
-            during my undergraduate career.
-<!-- project buttons -->
-          </p>
+        <!-- project buttons -->
+        <div id="projs" hidden="true">
           <a
             href="https://digital.wpi.edu/concern/student_works/gb19f908t?locale=en"
             target="blank"
@@ -45,23 +41,20 @@
             target="blank"
           >
             <button class="proj" id="iqp">IQP</button>
-          </a> <br>
-          
-         <div id="projT">test</div>
+          </a>
+          <br />
+        </div>
 
-<!-- assignment buttons -->
-          <p>
-            Below you can check out some projects that have been done for
-            classes, which typically operate on a seven- week term schedule.
-            Click the button to check them out or hover over to learn more!
-          </p>
-
+        <!-- assignment buttons -->
+        <div id="assign" hidden="true">
           <button id="ai">Intro to AI</button>
           <button id="algo">Algorithms</button>
           <button id="dviz">Data Viz</button>
           <button id="wbwr">Webware</button>
           <button id="softeng">Ind. Study: OOP</button>
         </div>
+      </div>   
       </div>
-   </body>
+    </div>
+  </body>
 </html>

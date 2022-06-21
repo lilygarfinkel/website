@@ -15,6 +15,9 @@ Make the "Click me!" button move when the visitor clicks it:
   item.addEventListener("click", function () {
     var id = this.id;
     switch (id) {
+      case "projs":
+        document.getEleme
+        break;
       case "ai":
         console.log("ai");
         break;
