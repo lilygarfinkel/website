@@ -11,14 +11,33 @@ console.log("Hello 🌎");
 Make the "Click me!" button move when the visitor clicks it:
 - First add the button to the page by following the "Next steps" in the README
 */
-const btn = document.querySelector("button"); // Get the button from the page
-// Detect clicks on the button
-if (btn) {
-  btn.onclick = function(){
-  var id = btn.id; 
-  
-  };
-}
+[...document.getElementsByTagName("button")].forEach(function(item) {
+item.addEventListener('click', function() {
+  var id = this.id;
+  switch(id){
+    case 'mqp':
+      console.log('mqp');
+      break
+     case 'iqp':
+      console.log('iqp');
+      break
+       case 'ai':
+      console.log('ai');
+      break
+       case 'algo':
+      console.log('algo');
+      break
+       case 'dviz':
+      console.log('dviz');
+      break
+       case 'wbwr':
+      console.log('wbwr');
+      break
+       case 'softeng':
+      console.log('softeng');
+      break
+  }
+})})
 
 // This is a single line JS comment
 /*
