@@ -7,11 +7,18 @@
     var page = document.getElementById("projPage");
     var projP = document.getElementById("projts");    
     var asgnP = document.getElementById("assgns");
+    var homeP = document.getElementById("home");    
+
     
     
     var id = this.id;
     switch (id) {
       case "home":
+      this.style.background = "#343a40";
+      page.style.background = "#343a40";
+      asgnP.style.background = "#202020";
+      projP.style.background = "#202020";
+
       let display = div0.style.display;
       if (display == "none") {
           div0.style.display = "block";
@@ -25,9 +32,12 @@
         this.style.background = "#343a40";
         page.style.background = "#343a40";
         asgnP.style.background = "#202020";
+        homeP.style.background = "#202020";
+
         let display1 = div1.style.display;
         if (display1 == "none") {
           div1.style.display = "block";
+          div0.style.display = "none";
           div2.style.display = "none";
         }
         break;
@@ -35,10 +45,12 @@
         this.style.background = "#343a40";
         page.style.background = "#343a40";
         projP.style.background = "#202020";
+        homeP.style.background = "#202020";
 
         let display2 = div2.style.display;
         if (display2 == "none") {
           div2.style.display = "block";
+          div0.style.display = "none";
           div1.style.display = "none";
         }
         break;

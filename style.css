@@ -60,10 +60,14 @@ body {
 
 }
 
+#home{
+    background: #343a40;
+}
+
 #projPage{
   height:300px;
   margin:auto;
-  background: #202020;
+  background: #343a40;
   border-bottom:1px solid #41ead4;
   border-left:1px solid #41ead4;
   border-right:1px solid #41ead4;
