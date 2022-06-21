@@ -24,7 +24,13 @@ body {
   background-color: var(--color-bg);
 }
 
+.hidden>div {
+	display:none;
+}
 
+.visible>div {
+	display:block;
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -39,6 +45,7 @@ body {
   line-height: 105%;
   margin: 0;
 }
+
 
 .tabs{
   display: flex;

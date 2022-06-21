@@ -15,26 +15,30 @@ Make the "Click me!" button move when the visitor clicks it:
   item.addEventListener("click", function () {
     var id = this.id;
     switch (id) {
-      case "proj":
+      case "projts":
         console.log("projects");
         var div1 = document.getElementById("projs");
-        if (div1.hidden == "hidden") {
-          div1.style.display = "block";
-        } else {
-          break;
-        }
-        break;
-      case "assign":
-        console.log("assign");
-        var div1 = document.getElementById("assign");
-        let hidden = div1.getAttribute("hidden");
+        let hidden1 = div1.getAttribute("visibility");
 
-        if (hidden) {
+        if (hidden1) {
           div1.removeAttribute("hidden");
+            break;
         } else {
           break;
-        }
-        break;
+        };
+      case "assgns":
+        console.log("assign");
+        var div2 = document.getElementById("assign");
+        let display2 = div2.style.display;
+        console.log(display2);
+
+        if (display2 == "none") {
+           div2.style.visibility == "block";
+            break;
+        } else {
+          break;
+        };
+      
       case "ai":
         console.log("ai");
         break;
