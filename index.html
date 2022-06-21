@@ -14,53 +14,55 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <div class="content" role="main">
-      <!-- headings  -->
+    
+    <!-- headings  -->
+    <div class="content">
       <h1 class="title">Lillian Garfinkel</h1>
       <h2>BS Computer Science 2022</h2>
       <h3>Worcester Polytechnic Institute</h3>
+    </div>
+    
+    <!-- 'tab' buttons -->
+    <div class="tabs">
+      <button id="projts">Projects</button>
+      <button id="assgns">Assignments</button>
+    </div>
 
-      <!-- 'tab' buttons -->
-      <div class="tabs">
-        <button id="projts">Projects</button>
-        <button id="assgns">Assignments</button>
+    <div id="projPage" class="content">
+      
+      <!-- project buttons -->
+      <div id="projs" style="display: none">
+        <a
+          href="https://digital.wpi.edu/concern/student_works/gb19f908t?locale=en"
+          target="blank"
+        >
+          <button class="proj" id="mqp">MQP</button>
+        </a>
+        <a
+          href="https://digital.wpi.edu/concern/student_works/9880vt904?locale=en"
+          target="blank"
+        >
+          <button class="proj" id="iqp">IQP</button>
+        </a>
+        <p id="text">
+          Hover over the buttons to learn more or click on the button to be
+          directed to the final project!
+        </p>
       </div>
 
-      <div id="projPage" class="contentSpace">
-        
-        <!-- project buttons -->
-        <div id="projs" style="display: none">
-          <a
-            href="https://digital.wpi.edu/concern/student_works/gb19f908t?locale=en"
-            target="blank"
-          >
-            <button class="proj" id="mqp">MQP</button>
-          </a>
-          <a
-            href="https://digital.wpi.edu/concern/student_works/9880vt904?locale=en"
-            target="blank"
-          >
-            <button class="proj" id="iqp">IQP</button>
-          </a>
-          <p id="text">
-            Hover over the buttons to learn more or click on the button to be
-            directed to the final project!
-          </p>
-        </div>
-
-        <!-- assignment buttons -->
-        <div id="assign" style="display: none">
-          <button id="ai">Intro to AI</button>
-          <button id="algo">Algorithms</button>
-          <button id="dviz">Data Viz</button>
-          <button id="wbwr">Webware</button>
-          <button id="softeng">Ind. Study: OOP</button>
-          <p id="text1">
-            Hover over the buttons to learn more or click on the button to be
-            directed to the final project!
-          </p>
-        </div>
+      <!-- assignment buttons -->
+      <div id="assign" style="display: none">
+        <button id="ai">Intro to AI</button>
+        <button id="algo">Algorithms</button>
+        <button id="dviz">Data Viz</button>
+        <button id="wbwr">Webware</button>
+        <button id="softeng">Ind. Study: OOP</button>
+        <p id="text1">
+          Hover over the buttons to learn more or click on the button to be
+          directed to the final project!
+        </p>
       </div>
+      
     </div>
   </body>
 </html>

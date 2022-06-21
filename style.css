@@ -14,6 +14,12 @@ body {
   color: #ffffff;
   background-color: var(--color-bg);
 }
+.tabs{
+  display:flex;
+  flex-direction: row;
+  
+  margin:auto;
+}
 
 .content {
   display: flex;
@@ -30,8 +36,9 @@ body {
   margin: 0;
 }
 
-.contentSpace{
-  width: 500px;
+#projPage{
+  max-width: 500px;
+  margin: auto;
   height:300px;
   background: #202020;
   border: 1px solid #41ead4;
