@@ -16,13 +16,23 @@ Make the "Click me!" button move when the visitor clicks it:
     var id = this.id;
     switch (id) {
       case "proj":
-        console.log("projects")
+        console.log("projects");
         var div1 = document.getElementById("projs");
-        if (div1.style.display !== "none") {
-         break;
+        if (div1.hidden == "hidden") {
+          div1.style.display = "block";
+        } else {
+          break;
         }
-        else{
-          div1.style.display == "flex"
+        break;
+      case "assign":
+        console.log("assign");
+        var div1 = document.getElementById("assign");
+        let hidden = div1.getAttribute("hidden");
+
+        if (hidden) {
+          div1.removeAttribute("hidden");
+        } else {
+          break;
         }
         break;
       case "ai":

@@ -32,10 +32,6 @@ body {
   justify-content: center;
 }
 
-.btns{
-  display: none;
-}
-
 .title {
   color: #ff206e;
   font-family: 'Inconsolata', monospace;
