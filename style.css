@@ -17,8 +17,6 @@ body {
 .tabs{
   display:flex;
   flex-direction: row;
-  float:left;
-  transform: rotate(0.75turn)
 }
 
 .content {
