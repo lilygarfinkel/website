@@ -36,7 +36,7 @@ Make the "Click me!" button move when the visitor clicks it:
     var id = this.id;
     switch (id) {
       case "mqp":
-        document.getElementById("ProjT").innerHTML = "This is about MQP";
+        document.getElementById("projT").innerHTML = "This is about MQP";
         console.log("mqp");
         break;
       case "iqp":
