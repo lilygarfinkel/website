@@ -36,6 +36,31 @@ item.addEventListener('click', function() {
        case 'softeng':
       console.log('softeng');
       break
+  }})
+  item.addEventListener('mouseover', function() {
+  var id = this.id;
+  switch(id){
+    case 'mqp':
+      console.log('mqp');
+      break
+     case 'iqp':
+      console.log('iqp');
+      break
+       case 'ai':
+      console.log('ai');
+      break
+       case 'algo':
+      console.log('algo');
+      break
+       case 'dviz':
+      console.log('dviz');
+      break
+       case 'wbwr':
+      console.log('wbwr');
+      break
+       case 'softeng':
+      console.log('softeng');
+      break
   }
 })})
 
