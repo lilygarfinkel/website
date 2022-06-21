@@ -38,19 +38,41 @@ body {
   margin: 0;
 }
 #tabs{
-  flex-position:row;
+  font-family: inherit;
+  font-size: 100%;
+  color: #ffffff;
+  background: #202020;
+  border-top:1px solid #41ead4;
+  border-left:1px solid #41ead4;
+  border-right:1px solid #41ead4;
+  box-sizing: border-box;
+  
+}
+.tabs{
+  font-family: inherit;
+  font-size: 100%;
+  color: #ffffff;
+  background: #202020;
+  border-left:1px solid #41ead4;
+  border-right:1px solid #41ead4;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+
 }
 
 #projPage{
   height:300px;
+  margin:auto;
   background: #202020;
-  border: 1px solid #41ead4;
+  border-bottom:1px solid #41ead4;
+  border-left:1px solid #41ead4;
+  border-right:1px solid #41ead4;
+  border-top: 1px solid #6c757d;
   box-sizing: border-box;
-  border-radius: 4px;
   padding: 0.5rem 1rem;
 }
 
-button {
+.option {
   font-family: inherit;
   font-size: 100%;
   color: #ffffff;
