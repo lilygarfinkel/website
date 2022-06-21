@@ -13,32 +13,32 @@ Make the "Click me!" button move when the visitor clicks it:
 */
 [...document.getElementsByTagName("button")].forEach(function (item) {
   item.addEventListener("click", function () {
+            var div1 = document.getElementById("projs");
+        var div2 = document.getElementById("assign");
+
     var id = this.id;
     switch (id) {
       case "projts":
         console.log("projects");
-        var div1 = document.getElementById("projs");
-        let hidden1 = div1.getAttribute("visibility");
+        let display1 = div1.style.display;
+        console.log(display1);
 
-        if (hidden1) {
-          div1.removeAttribute("hidden");
-            break;
-        } else {
-          break;
-        };
+        if (display1 == "none") {
+          div1.style.display = "block";
+          div2.style.display = "none";
+        }
+        break;
       case "assgns":
         console.log("assign");
-        var div2 = document.getElementById("assign");
         let display2 = div2.style.display;
         console.log(display2);
 
         if (display2 == "none") {
-           div2.style.visibility == "block";
-            break;
-        } else {
-          break;
-        };
-      
+          div2.style.display = "block";
+          div1.style.display = "none";
+        }
+        break;
+
       case "ai":
         console.log("ai");
         break;
@@ -60,26 +60,25 @@ Make the "Click me!" button move when the visitor clicks it:
     var id = this.id;
     switch (id) {
       case "mqp":
-        document.getElementById("projT").innerHTML = "This is about MQP";
-        console.log("mqp");
+        document.getElementById("text").innerHTML = "This is about MQP";
         break;
       case "iqp":
-        console.log("iqp");
+        document.getElementById("text").innerHTML = "This is about IQP";
         break;
       case "ai":
-        console.log("ai");
+        document.getElementById("text1").innerHTML = "This is about AI";
         break;
       case "algo":
-        console.log("algo");
+        document.getElementById("text1").innerHTML = "This is about ALGORITHMS";
         break;
       case "dviz":
-        console.log("dviz");
+         document.getElementById("text1").innerHTML = "This is about DATA VIZ";
         break;
       case "wbwr":
-        console.log("wbwr");
+         document.getElementById("text1").innerHTML = "This is about WEBWARE";
         break;
       case "softeng":
-        console.log("softeng");
+         document.getElementById("text1").innerHTML = "This is about SOFT ENG";
         break;
     }
   });
