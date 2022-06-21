@@ -1,38 +1,25 @@
-/*
-This is your site JavaScript code - you can add interactivity and carry out processing
-- Initially the JS writes a message to the console, and moves a button you can add from the README
-*/
 
-// Print a message in the browser's dev tools console each time the page loads
-// Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
-
-/* 
-Make the "Click me!" button move when the visitor clicks it:
-- First add the button to the page by following the "Next steps" in the README
-*/
 [...document.getElementsByTagName("button")].forEach(function (item) {
   item.addEventListener("click", function () {
-            var div1 = document.getElementById("projs");
-        var div2 = document.getElementById("assign");
+    var div1 = document.getElementById("projs");
+    var div2 = document.getElementById("assign");
+    var page = document.getElementById("projPage");
 
     var id = this.id;
     switch (id) {
       case "projts":
-        console.log("projects");
+        this.style.background = "#343a40";
+        page.style.background = "#343a40";
         let display1 = div1.style.display;
-        console.log(display1);
-
         if (display1 == "none") {
           div1.style.display = "block";
           div2.style.display = "none";
         }
         break;
       case "assgns":
-        console.log("assign");
+        this.style.background = "#343a40";
+        page.style.background = "#343a40";
         let display2 = div2.style.display;
-        console.log(display2);
-
         if (display2 == "none") {
           div2.style.display = "block";
           div1.style.display = "none";
@@ -72,13 +59,13 @@ Make the "Click me!" button move when the visitor clicks it:
         document.getElementById("text1").innerHTML = "This is about ALGORITHMS";
         break;
       case "dviz":
-         document.getElementById("text1").innerHTML = "This is about DATA VIZ";
+        document.getElementById("text1").innerHTML = "This is about DATA VIZ";
         break;
       case "wbwr":
-         document.getElementById("text1").innerHTML = "This is about WEBWARE";
+        document.getElementById("text1").innerHTML = "This is about WEBWARE";
         break;
       case "softeng":
-         document.getElementById("text1").innerHTML = "This is about SOFT ENG";
+        document.getElementById("text1").innerHTML = "This is about SOFT ENG";
         break;
     }
   });
