@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- headings  -->
+    <div class="content">
+      <h1 class="title">Lillian Garfinkel</h1>
+      <h2> BS Computer Science - Worcester Polytechnic Institute 2022</h2>
+    </div>
+
+    <div class="content1">
+      <!-- 'tab' buttons -->
+      <div id="tabs" >
+         <button class="tabs" id="home">Home</button>
+        <button class="tabs" id="projts">Projects</button>
+        <button class="tabs" id="assgns">Assignments</button>
+      </div>
+
+      <div id="projPage">
+        <div id="info">
+          welcome bitches
+        </div>
+        <!-- project buttons -->
+        <div id="projs" style="display: none"  >
+          <a
+            href="https://digital.wpi.edu/concern/student_works/gb19f908t?locale=en"
+            target="blank"
+          >
+            <button class="option" id="mqp">Deep Learning for Mental Health Screening using Smartphone Data</button>
+          </a>
+          <a
+            href="https://digital.wpi.edu/concern/student_works/9880vt904?locale=en"
+            target="blank"
+          >
+            <button class="option" id="iqp">Exploring Passive Data to Synthesize Customer Perceptions for The USPTO</button>
+          </a>
+          <p id="text">
+            Hover over the buttons to learn more or click on the button to be
+            directed to the final project in WPI's Project Database!
+          </p>
+         <img src = "/assets/mqpPoster.svg" alt="mqp poster"/>
+        </div>
+
+        <!-- assignment buttons -->
+        <div id="assign"  style="display: none">
+          <button class="option" id="ai">Intro to AI</button>
+          <button  class="option" id="algo">Algorithms</button>
+          <button class="option" id="dviz">Data Visualization</button>
+          <button class="option" id="wbwr">Webware</button>
+          <button class="option"  id="softeng">Object Oriented Programming</button>
+          <button class="option"  id="compgra">Computer Graphics</button>
+          <p id="text1">
+            Hover over the buttons to learn more or click on the button to be
+            directed to the final project!
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
