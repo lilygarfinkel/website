@@ -115,12 +115,8 @@ function readFile(e) {
   }
   var reader = new FileReader();
   reader.onload = function(){
-    var text = reader.result;
-    var node = document.getElementById('text');
-    node.innerText = text;
-    console.log(reader.result.substring(0, 200));
+    return reader.result;
   };
-  reader.readAsText(url);
-  return reader.result;
+
 }
 
