@@ -16,7 +16,7 @@ function main(){
       page.style.background = "#343a40";
       asgnP.style.background = "#202020";
       projP.style.background = "#202020";
-              mqpdiv.style.display = "none";
+      mqpdiv.style.display = "none";
 
 
       let display = div0.style.display;
@@ -120,7 +120,7 @@ function readFile(e) {
     node.innerText = text;
     console.log(reader.result.substring(0, 200));
   };
-  reader.readAsText(file);
+  reader.readAsText(url);
   return reader.result;
 }
 
