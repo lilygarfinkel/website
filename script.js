@@ -26,9 +26,8 @@
           div2.style.display = "none";
         }
         break;
-
-        
       case "projts":
+        console.log("clicked");
         this.style.background = "#343a40";
         page.style.background = "#343a40";
         asgnP.style.background = "#202020";
