@@ -1,6 +1,7 @@
 function main(){
   [...document.getElementsByTagName("button")].forEach(function (item) {
-  item.addEventListener("click", function () {
+    var mqpdiv =document.getElementById("mqpInfo");
+    item.addEventListener("click", function () {
     var div0 = document.getElementById("info");
     var div1 = document.getElementById("projs");
     var div2 = document.getElementById("assign");
@@ -15,6 +16,8 @@ function main(){
       page.style.background = "#343a40";
       asgnP.style.background = "#202020";
       projP.style.background = "#202020";
+      mqpdiv.style.display = "none";
+
 
       let display = div0.style.display;
       if (display == "none") {
@@ -71,7 +74,7 @@ function main(){
     }
   });
   item.addEventListener("mouseover", function () {
-    var mqpdiv =document.getElementById("mqpInfo");
+   
 
     var id = this.id;
     switch (id) {
