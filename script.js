@@ -1,5 +1,5 @@
-
-[...document.getElementsByTagName("button")].forEach(function (item) {
+function main (){
+  [...document.getElementsByTagName("button")].forEach(function (item) {
   item.addEventListener("click", function () {
     var div0 = document.getElementById("info");
     var div1 = document.getElementById("projs");
@@ -99,8 +99,4 @@
   });
 });
 
-// This is a single line JS comment
-/*
-This is a comment that can span multiple lines 
-- use comments to make your own notes!
-*/
+}
