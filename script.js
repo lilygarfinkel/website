@@ -1,4 +1,4 @@
-function main (){
+function main(){
   [...document.getElementsByTagName("button")].forEach(function (item) {
   item.addEventListener("click", function () {
     var div0 = document.getElementById("info");
@@ -8,9 +8,6 @@ function main (){
     var projP = document.getElementById("projts");    
     var asgnP = document.getElementById("assgns");
     var homeP = document.getElementById("home");    
-
-    
-    
     var id = this.id;
     switch (id) {
       case "home":
