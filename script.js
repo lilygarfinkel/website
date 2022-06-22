@@ -81,7 +81,7 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        document.getElementById("text").innerHTML = readFile("mqp.txt");
+        document.getElementById("text").innerHTML = "This is about MQP";
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
 
