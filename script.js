@@ -71,10 +71,13 @@ function main(){
     }
   });
   item.addEventListener("mouseover", function () {
+    var mqpdiv =document.getElementById("mqpInfo");
+
     var id = this.id;
     switch (id) {
       case "mqp":
         document.getElementById("text").innerHTML = "This is about MQP";
+        mqpdiv.style.display = "block";
         break;
       case "iqp":
         document.getElementById("text").innerHTML = "This is about IQP";
