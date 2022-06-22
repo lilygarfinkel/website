@@ -81,6 +81,8 @@ function main(){
         break;
       case "iqp":
         document.getElementById("text").innerHTML = "This is about IQP";
+        mqpdiv.style.display = "none";
+
         break;
       case "ai":
         document.getElementById("text1").innerHTML = "This is about AI";
