@@ -1,6 +1,8 @@
 function main(){
   [...document.getElementsByTagName("button")].forEach(function (item) {
     var mqpdiv =document.getElementById("mqpInfo");
+    var iqpdiv =document.getElementById("iqpInfo");
+
     item.addEventListener("click", function () {
     var div0 = document.getElementById("info");
     var div1 = document.getElementById("projs");
@@ -17,8 +19,8 @@ function main(){
       asgnP.style.background = "#202020";
       projP.style.background = "#202020";
       mqpdiv.style.display = "none";
-
-
+      iqpdiv.style.display = "none";
+      
       let display = div0.style.display;
       if (display == "none") {
           div0.style.display = "block";
@@ -81,10 +83,13 @@ function main(){
       case "mqp":
         document.getElementById("text").innerHTML = readFile("mqp.txt");
         mqpdiv.style.display = "block";
+        iqpdiv.style.display = "none";
+
         break;
       case "iqp":
         document.getElementById("text").innerHTML = "This is about IQP";
         mqpdiv.style.display = "none";
+        iqpdiv.style.display = "block";
 
         break;
       case "ai":
