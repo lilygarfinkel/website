@@ -122,6 +122,7 @@ function readFile(e) {
   reader.onload = function(){
     return reader.result;
   };
+  reader.readAsText(url);
 
 }
 
