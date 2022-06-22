@@ -45,6 +45,12 @@ body {
   box-sizing: border-box;
   
 }
+
+.iqp{
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+
+}
 .tabs{
   font-family: inherit;
   font-size: 100%;
