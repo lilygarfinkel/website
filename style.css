@@ -46,16 +46,16 @@ body {
   
 }
 
-.iqp{
+/* .iqp{
  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* box-sizing: border-box; */
+  /* box-sizing: border-box; 
   padding: 0.5rem 1rem;
 
-}
+} */
 .tabs{
   font-family: inherit;
   font-size: 100%;
