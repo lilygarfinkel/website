@@ -21,6 +21,8 @@ function main(){
           div0.style.display = "block";
           div1.style.display = "none";
           div2.style.display = "none";
+          document.getElementById("text").innerHTML = "Hover over the buttons to learn more or click on the button to be directed to the final project!";
+          document.getElementById("text1").innerHTML = "Hover over the buttons to learn more or click on the button to be directed to the final project!";
         }
         break;
       case "projts":
