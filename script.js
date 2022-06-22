@@ -16,7 +16,7 @@ function main(){
       page.style.background = "#343a40";
       asgnP.style.background = "#202020";
       projP.style.background = "#202020";
-      mqpdiv.style.display = "none";
+              mqpdiv.style.display = "none";
 
 
       let display = div0.style.display;
@@ -79,7 +79,7 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        document.getElementById("text").innerHTML = "This is about MQP";
+        document.getElementById("text").innerHTML = readFile("mqp.txt");
         mqpdiv.style.display = "block";
         break;
       case "iqp":
@@ -107,3 +107,20 @@ function main(){
 });
 
 }
+
+function readFile(e) {
+  var url = "mqp.txt";
+  if (!url) {
+      return;
+  }
+  var reader = new FileReader();
+  reader.onload = function(){
+    var text = reader.result;
+    var node = document.getElementById('text');
+    node.innerText = text;
+    console.log(reader.result.substring(0, 200));
+  };
+  reader.readAsText(file);
+  return reader.result;
+}
+
