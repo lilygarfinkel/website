@@ -33,6 +33,7 @@ body {
   font-size: 50px;
   line-height: 105%;
   margin: 0;
+  text-align: center;
 }
 #tabs{
   font-family: inherit;
@@ -95,9 +96,11 @@ body {
 /* Subheadings */
 h2 {
   color: #fbff12;
+  text-align: center;
 }
 h3 {
   color: #41ead4;
+  text-align: center;
 }
 p {
   color: #FFFFFF;
