@@ -114,8 +114,8 @@ function main(){
 }
 
 function readFile(e) {
-  var openFile = function(event) {
-    var input = event.target;
+  var openFile = function(e) {
+    var input = e.target;
 
     var reader = new FileReader();
     reader.onload = function(){
@@ -123,7 +123,7 @@ function readFile(e) {
       document.getElementById('text').innerHTML = text;
       console.log(text);
     };
-    reader.readAsText(input.files[0]);
+    reader.readAsText(input);
   };
 
 }
