@@ -115,7 +115,7 @@ function main(){
     const url1 = file;
     fetch(url1)
     .then( r => r.text() )
-    .then( t => { console.log(t);return t;})
+    .then( t => { console.log(t);return t.toString;})
   };
 
 
