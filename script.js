@@ -120,9 +120,8 @@ function readFile(e) {
     var reader = new FileReader();
     reader.onload = function(){
       var text = reader.result;
-      var node = document.getElementById('text');
-      node.innerText = text;
-      console.log(reader.result);
+      document.getElementById('text').innerHTML = text;
+      console.log(text);
     };
     reader.readAsText(input.files[0]);
   };
