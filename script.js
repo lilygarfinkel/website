@@ -118,8 +118,8 @@ function main(){
     var text = "";
     await fetch(url1)
     .then( r => r.text() )
-    .then( t => { text=t; console.log(text);})
-    return text;
+    .then( t => { text=t; console.log(text); return text;})
+   
   };
 
 
