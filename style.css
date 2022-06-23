@@ -49,7 +49,9 @@ body {
 }
 #iqpInfo{
   /* height: 500px; */
-  position: relative
+  position: relative;
+  padding: 0.5rem 1rem;
+
 }
 
 .iqp{
