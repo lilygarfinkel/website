@@ -81,7 +81,7 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        document.getElementById("text").innerHTML = "This is about MQP";
+        document.getElementById("text").innerHTML = readFile("mqp.txt");
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
 
@@ -114,15 +114,18 @@ function main(){
 }
 
 function readFile(e) {
-  var url = "mqp.txt";
-  if (!url) {
-      return;
-  }
-  var reader = new FileReader();
-  reader.onload = function(){
-    return reader.result;
+  var openFile = function(event) {
+    var input = event.target;
+
+    var reader = new FileReader();
+    reader.onload = function(){
+      var text = reader.result;
+      var node = document.getElementById('text');
+      node.innerText = text;
+      console.log(reader.result);
+    };
+    reader.readAsText(input.files[0]);
   };
- // reader.readAsText(url);
 
 }
 
