@@ -46,7 +46,7 @@ body {
   
 }
 
-.iqpInfo{
+#iqpInfo{
  
   display: flex;
   flex-direction: column;
