@@ -112,14 +112,11 @@ function main(){
 });
 
 }
-  var openFile = function(e) {
-    var file = e.target;
-    var reader = new FileReader();
-    reader.onload = function(){
-      document.getElementById('text').innerHTML = reader.result;
-      console.log(reader.result);
-    };
-    reader.readAsText(file.files[0]);
+  var openFile = function(file) {
+    const url1 = "https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt"
+    const response = await fetch(url1);
+    const data = await response.text();
+    console.log(data);
   };
 
 
