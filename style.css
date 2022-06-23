@@ -46,8 +46,13 @@ body {
   box-sizing: border-box;
   
 }
-
 #iqpInfo{
+  margin: auto;
+  width: 640px; 
+  padding: 50px;
+}
+
+.iqp{
   display: block;
   margin-left: auto;
   margin-right: auto;
