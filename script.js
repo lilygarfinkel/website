@@ -113,7 +113,7 @@ function main(){
 });
 
 }
-  var openFile = function(file) {
+  var openFile = async function(file) {
     const url1 = file;
     await fetch(url1)
     .then( r => r.text() )
