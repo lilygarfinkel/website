@@ -119,7 +119,7 @@ function main(){
       document.getElementById('text').innerHTML = reader.result;
       console.log(reader.result);
     };
-    reader.readAsText(file);
+    reader.readAsText(file.files[0]);
   };
 
 
