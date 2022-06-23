@@ -81,7 +81,7 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        document.getElementById("text").innerHTML = openFile();
+        document.getElementById("text").innerHTML = openFile("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
 
@@ -112,11 +112,11 @@ function main(){
 });
 
 }
-  var openFile = function() {
-    const url1 = "https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt"
+  var openFile = function(file) {
+    const url1 = file;
     fetch(url1)
     .then( r => r.text() )
-    .then( t => {return t;})
+    .then( t => {return t})
   };
 
 
