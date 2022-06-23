@@ -13,6 +13,7 @@ body {
   font-family: 'Inconsolata', monospace ;
   color: #ffffff;
   background-color: var(--color-bg);
+  height:100%;
 }
 
 
