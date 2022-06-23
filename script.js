@@ -115,9 +115,11 @@ function main(){
 }
   var openFile = async function(file) {
     const url1 = file;
+    var text = "";
     await fetch(url1)
     .then( r => r.text() )
-    .then( t => { console.log(t); return t;})
+    .then( t => { text==t; console.log(text);})
+    return text;
   };
 
 
