@@ -82,7 +82,7 @@ function main(){
       case "mqp":
         var content = openFile("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
         console.log(content);
-        document.getElementById("text").innerHTML = content;
+        document.getElementById("text").innerHTML = content.result;
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
 
@@ -118,8 +118,8 @@ function main(){
     var text = "";
     await fetch(url1)
     .then( r => r.text() )
-    .then( t => { text=t; console.log(text); return text;})
-   
+    .then( t => { text=t; console.log(text);})
+    return text;
   };
 
 
