@@ -81,6 +81,7 @@ function main(){
     switch (id) {
       case "mqp":
         var content = openFile("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
+        console.log(content);
         document.getElementById("text").innerHTML = content;
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
