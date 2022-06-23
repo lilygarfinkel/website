@@ -115,15 +115,13 @@ function main(){
 
 function readFile(e) {
   var openFile = function(e) {
-    var input = e.target;
-
+    var file = e;
     var reader = new FileReader();
     reader.onload = function(){
-      var text = reader.result;
-      document.getElementById('text').innerHTML = text;
+      document.getElementById('text').innerHTML = reader.result;
       console.log(text);
     };
-    reader.readAsText(input);
+    reader.readAsText(file);
   };
 
 }
