@@ -119,7 +119,7 @@ function readFile(e) {
     var reader = new FileReader();
     reader.onload = function(){
       document.getElementById('text').innerHTML = reader.result;
-      console.log(text);
+      console.log(reader.result);
     };
     reader.readAsText(file);
   };
