@@ -113,7 +113,7 @@ function main(){
 
 }
   var openFile = function(e) {
-    var file = e;
+    var file = e.target;
     var reader = new FileReader();
     reader.onload = function(){
       document.getElementById('text').innerHTML = reader.result;
