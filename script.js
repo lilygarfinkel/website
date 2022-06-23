@@ -81,7 +81,7 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        document.getElementById("text").innerHTML = readFile("mqp.txt");
+        document.getElementById("text").innerHTML = openFile("mqp.txt");
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
 
@@ -112,8 +112,6 @@ function main(){
 });
 
 }
-
-function readFile(e) {
   var openFile = function(e) {
     var file = e;
     var reader = new FileReader();
@@ -124,5 +122,4 @@ function readFile(e) {
     reader.readAsText(file);
   };
 
-}
 
