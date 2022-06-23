@@ -115,9 +115,9 @@ function main(){
 }
   var openFile = function(file) {
     const url1 = file;
-    fetch(url1)
+    await fetch(url1)
     .then( r => r.text() )
-    .then( t => { console.log(t);return t;})
+    .then( t => { console.log(t); return t;})
   };
 
 
