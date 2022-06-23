@@ -54,7 +54,7 @@ body {
 
 }
 
-.iqp{
+.iqp, .mqp{
   display: flex;
   flex-direction: column;
   align-items: center;
