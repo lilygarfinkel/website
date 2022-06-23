@@ -31,7 +31,6 @@ function main(){
         }
         break;
       case "projts":
-        console.log("clicked");
         this.style.background = "#343a40";
         page.style.background = "#343a40";
         asgnP.style.background = "#202020";
@@ -116,7 +115,7 @@ function main(){
     const url1 = file;
     fetch(url1)
     .then( r => r.text() )
-    .then( t => { return t})
+    .then( t => { console.log(t);return t;})
   };
 
 
