@@ -47,9 +47,8 @@ body {
   
 }
 #iqpInfo{
-  margin: auto;
-  width: 640px; 
-  padding: 50px;
+  height: 500px;
+  position: relative
 }
 
 .iqp{
@@ -94,8 +93,6 @@ body {
   color: #ffffff;
   background: #202020;
   border: 1px solid #41ead4;
-  align-items: center;
-  justify-content: center;
   border-radius: 4px;
   padding: 0.5rem 1rem;
 }
