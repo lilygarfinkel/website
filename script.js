@@ -116,8 +116,7 @@ function main(){
     const url1 = file;
     fetch(url1)
     .then( r => r.text() )
-    .then( t => { return t;})
-  }
-    ;
+    .then( t => { return t})
+  };
 
 
