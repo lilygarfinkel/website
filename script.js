@@ -81,7 +81,7 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        makeTeal();
+        makeTeal("mqp");
         makeNormal("iqp");
       
         mqpdiv.style.display = "block";
@@ -89,12 +89,9 @@ function main(){
         ogText.style.display = "none";
         break;
       case "iqp":
-        makeTeal();
+        makeTeal("iqp");
         makeNormal("mqp");
-      
-        document.getElementById("mqp").style.background = "#202020";
-        document.getElementById("mqp").style.color = "#ffffff" ;
-        document.getElementById("mqp").style.border = "1px solid #41ead4";
+    
 
         ogText.style.display = "none";
         mqpdiv.style.display = "none";
@@ -102,7 +99,7 @@ function main(){
 
         break;
       case "ai":
-        makeTeal();
+        makeTeal("ai");
         makeNormal("softeng");
         makeNormal("algo");
         makeNormal("dviz");
@@ -111,7 +108,7 @@ function main(){
         document.getElementById("text1").innerHTML = "This is about AI";
         break;
       case "algo":
-        makeTeal();
+        makeTeal("algo");
         makeNormal("softeng");
         makeNormal("ai");
         makeNormal("dviz");
@@ -120,7 +117,7 @@ function main(){
         document.getElementById("text1").innerHTML = "This is about ALGORITHMS";
         break;
       case "dviz":
-        makeTeal();
+        makeTeal("dviz");
         makeNormal("softeng");
         makeNormal("ai");
         makeNormal("algo");
@@ -129,7 +126,7 @@ function main(){
         document.getElementById("text1").innerHTML = "This is about DATA VIZ";
         break;
       case "wbwr":
-        makeTeal();
+        makeTeal("wbwr");
         makeNormal("softeng");
         makeNormal("algo");
         makeNormal("dviz");
@@ -138,7 +135,7 @@ function main(){
         document.getElementById("text1").innerHTML = "This is about WEBWARE";
         break;
       case "softeng":
-      makeTeal();
+      makeTeal("softeng");
       makeNormal("ai");
       makeNormal("algo");
       makeNormal("dviz");
@@ -153,10 +150,10 @@ function main(){
 
 }
 
-function makeTeal(){
-  this.style.background = "#41ead4";
-  this.style.color = "#202020";
-  this.style.border = "1px solid #ffffff";
+function makeTeal(id){
+  document.getElementById(id) = "#41ead4";
+  document.getElementById(id) = "#202020";
+  document.getElementById(id) = "1px solid #ffffff";
 }
 function makeNormal(id){
   document.getElementById(id).style.background = "#202020";
