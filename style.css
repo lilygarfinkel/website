@@ -62,6 +62,7 @@ body {
 .tabs{
   font-family: inherit;
   font-size: 100%;
+  font-weight: 600;
   color: #ffffff;
   background: #202020;
   border-left:1px solid #41ead4;
@@ -90,6 +91,7 @@ body {
 .option {
   font-family: inherit;
   font-size: 100%;
+  font-weight: 600;
   color: #ffffff;
   background: #202020;
   border: 1px solid #41ead4;
