@@ -80,7 +80,9 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        var content = openFile("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt").then(content => console.log(content));
+        var content = openFile("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt").then(content => {
+          return console.log(content);
+        });
         document.getElementById("text").innerHTML = content;
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
@@ -112,10 +114,9 @@ function main(){
 });
 
 }
-  var openFile = async(file) => {
-    var text = await fetch(file);
-    const r = await text.text();
-    return r;
+  async function openFile(file) {
+  return fetch(file).then(r => { return r.text();})
+     
   };
 
 
