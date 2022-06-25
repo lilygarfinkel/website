@@ -110,18 +110,39 @@ function main(){
 
         break;
       case "ai":
+        this.style.background = "#41ead4";
+        this.style.color = "#202020";
+        this.style.border = "1px solid #ffffff";
+
         document.getElementById("text1").innerHTML = "This is about AI";
         break;
       case "algo":
+        this.style.background = "#41ead4";
+        this.style.color = "#202020";
+        this.style.border = "1px solid #ffffff";
+
         document.getElementById("text1").innerHTML = "This is about ALGORITHMS";
         break;
       case "dviz":
+        this.style.background = "#41ead4";
+        this.style.color = "#202020";
+        this.style.border = "1px solid #ffffff";
+
         document.getElementById("text1").innerHTML = "This is about DATA VIZ";
         break;
       case "wbwr":
+      this.style.background = "#41ead4";
+        this.style.color = "#202020";
+        this.style.border = "1px solid #ffffff";
+
         document.getElementById("text1").innerHTML = "This is about WEBWARE";
         break;
       case "softeng":
+        this.style.background = "#41ead4";
+        this.style.color = "#202020";
+        this.style.border = "1px solid #ffffff";
+
+
         document.getElementById("text1").innerHTML = "This is about SOFT ENG";
         break;
     }
