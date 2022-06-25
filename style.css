@@ -90,6 +90,8 @@ body {
   background: #202020;
   border-left:1px solid #41ead4;
   border-right:1px solid #41ead4;
+  border-top: #343a40;
+  border-bottom:#343a40;
   box-sizing: border-box;
 }
 .option {
