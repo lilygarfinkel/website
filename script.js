@@ -84,6 +84,9 @@ function main(){
         // var content = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
         // console.log(content);
         // document.getElementById("text").innerHTML = content;
+        this.style.background = "#41ead4";
+        this.style.color = "#202020";
+        this.style.border = "1px solid #ffffff"
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
         ogText.style.display = "none";
@@ -92,6 +95,9 @@ function main(){
         // var content1 = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/iqp.txt");
         // console.log(content1);
         // document.getElementById("text").innerHTML = content1;
+        this.style.background = "#41ead4";
+        this.style.color = "#202020";
+        this.style.border = "1px solid #ffffff"
         ogText.style.display = "none";
         mqpdiv.style.display = "none";
         iqpdiv.style.display = "block";
