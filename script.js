@@ -2,6 +2,7 @@ function main(){
   [...document.getElementsByTagName("button")].forEach(function (item) {
     var mqpdiv =document.getElementById("mqpInfo");
     var iqpdiv =document.getElementById("iqpInfo");
+    var ogText = document.getElementById("text");
 
     item.addEventListener("click", function () {
     var div0 = document.getElementById("info");
@@ -85,12 +86,13 @@ function main(){
         // document.getElementById("text").innerHTML = content;
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
-
+        ogText.style.display = "none";
         break;
       case "iqp":
         // var content1 = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/iqp.txt");
         // console.log(content1);
         // document.getElementById("text").innerHTML = content1;
+        ogText.style.display = "none";
         mqpdiv.style.display = "none";
         iqpdiv.style.display = "block";
 
