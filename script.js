@@ -88,7 +88,9 @@ function main(){
 
         break;
       case "iqp":
-        document.getElementById("text").innerHTML = "This is about IQP";
+        var content = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/iqp.txt");
+        console.log(content);
+        document.getElementById("text").innerHTML = content;
         mqpdiv.style.display = "none";
         iqpdiv.style.display = "block";
 
