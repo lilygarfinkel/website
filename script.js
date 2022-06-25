@@ -151,9 +151,9 @@ function main(){
 }
 
 function makeTeal(id){
-  document.getElementById(id) = "#41ead4";
-  document.getElementById(id) = "#202020";
-  document.getElementById(id) = "1px solid #ffffff";
+  document.getElementById(id).style.backgorund = "#41ead4";
+  document.getElementById(id).style.color = "#202020";
+  document.getElementById(id).style.border = "1px solid #ffffff";
 }
 function makeNormal(id){
   document.getElementById(id).style.background = "#202020";
