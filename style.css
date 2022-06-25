@@ -53,12 +53,13 @@ body {
 }
 
 .iqp, .mqp{
+  max-width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 800px;
-  width: 100%;
+ 
 }
 
 #home{
