@@ -88,9 +88,9 @@ function main(){
 
         break;
       case "iqp":
-        var content = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/iqp.txt");
-        console.log(content);
-        document.getElementById("text").innerHTML = content;
+        var content1 = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/iqp.txt");
+        console.log(content1);
+        document.getElementById("text").innerHTML = content1;
         mqpdiv.style.display = "none";
         iqpdiv.style.display = "block";
 
@@ -128,6 +128,6 @@ function readText(file) {
     }
   }
   txtFile.send(null);
-
+  return allText;
 
 }
