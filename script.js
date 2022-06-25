@@ -80,17 +80,17 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        var content = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
-        console.log(content);
-        document.getElementById("text").innerHTML = content;
+        // var content = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
+        // console.log(content);
+        // document.getElementById("text").innerHTML = content;
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
 
         break;
       case "iqp":
-        var content1 = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/iqp.txt");
-        console.log(content1);
-        document.getElementById("text").innerHTML = content1;
+        // var content1 = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/iqp.txt");
+        // console.log(content1);
+        // document.getElementById("text").innerHTML = content1;
         mqpdiv.style.display = "none";
         iqpdiv.style.display = "block";
 
