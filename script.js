@@ -80,7 +80,7 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        var content = openFile("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
+        var content = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
         console.log(content);
         document.getElementById("text").innerHTML = content;
         mqpdiv.style.display = "block";
@@ -113,7 +113,7 @@ function main(){
 });
 
 }
-function openFile(file) {
+function readText(file) {
   
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", file, true);
