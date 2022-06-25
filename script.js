@@ -81,7 +81,7 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        this.makeTeal();
+        makeTeal();
         makeNormal("iqp");
       
         mqpdiv.style.display = "block";
@@ -89,7 +89,7 @@ function main(){
         ogText.style.display = "none";
         break;
       case "iqp":
-        this.makeTeal();
+        makeTeal();
         makeNormal("mqp");
       
         document.getElementById("mqp").style.background = "#202020";
@@ -102,7 +102,7 @@ function main(){
 
         break;
       case "ai":
-        this.makeTeal();
+        makeTeal();
         makeNormal("softeng");
         makeNormal("algo");
         makeNormal("dviz");
@@ -111,7 +111,7 @@ function main(){
         document.getElementById("text1").innerHTML = "This is about AI";
         break;
       case "algo":
-        this.makeTeal();
+        makeTeal();
         makeNormal("softeng");
         makeNormal("ai");
         makeNormal("dviz");
@@ -120,7 +120,7 @@ function main(){
         document.getElementById("text1").innerHTML = "This is about ALGORITHMS";
         break;
       case "dviz":
-        this.makeTeal();
+        makeTeal();
         makeNormal("softeng");
         makeNormal("ai");
         makeNormal("algo");
@@ -129,7 +129,7 @@ function main(){
         document.getElementById("text1").innerHTML = "This is about DATA VIZ";
         break;
       case "wbwr":
-        this.makeTeal();
+        makeTeal();
         makeNormal("softeng");
         makeNormal("algo");
         makeNormal("dviz");
@@ -138,7 +138,7 @@ function main(){
         document.getElementById("text1").innerHTML = "This is about WEBWARE";
         break;
       case "softeng":
-      this.makeTeal();
+      makeTeal();
       makeNormal("ai");
       makeNormal("algo");
       makeNormal("dviz");
