@@ -81,23 +81,27 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        // var content = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
-        // console.log(content);
-        // document.getElementById("text").innerHTML = content;
         this.style.background = "#41ead4";
         this.style.color = "#202020";
         this.style.border = "1px solid #ffffff"
+
+        document.getElementById("iqp").style.background = "#202020";
+        document.getElementById("iqp").style.color = "#ffffff" ;
+        document.getElementById("iqp").style.border = "1px solid #41ead4";
+
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
         ogText.style.display = "none";
         break;
       case "iqp":
-        // var content1 = readText("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/iqp.txt");
-        // console.log(content1);
-        // document.getElementById("text").innerHTML = content1;
         this.style.background = "#41ead4";
         this.style.color = "#202020";
-        this.style.border = "1px solid #ffffff"
+        this.style.border = "1px solid #ffffff";
+
+        document.getElementById("mqp").style.background = "#202020";
+        document.getElementById("mqp").style.color = "#ffffff" ;
+        document.getElementById("mqp").style.border = "1px solid #41ead4";
+
         ogText.style.display = "none";
         mqpdiv.style.display = "none";
         iqpdiv.style.display = "block";
@@ -121,21 +125,5 @@ function main(){
     }
   });
 });
-
-}
-function readText(file) {
-
-  var txtFile = new XMLHttpRequest();
-  txtFile.open("GET", file, true);
-  txtFile.onreadystatechange = function() {
-    if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
-      if (txtFile.status === 200) {  // Makes sure it's found the file.
-        allText = txtFile.responseText;
-       // lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-      }
-    }
-  }
-  txtFile.send(null);
-  return allText;
 
 }
