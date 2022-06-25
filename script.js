@@ -116,7 +116,7 @@ function main(){
 
 }
 function readText(file) {
-  var allText;
+
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", file, true);
   txtFile.onreadystatechange = function() {
@@ -128,6 +128,6 @@ function readText(file) {
     }
   }
   txtFile.send(null);
-  return allText;
+
 
 }
