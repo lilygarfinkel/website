@@ -84,6 +84,7 @@ function main(){
         this.style.background = "#41ead4";
         this.style.color = "#202020";
         this.style.border = "1px solid #ffffff"
+        this.style.fontWeight = "600";
 
         document.getElementById("iqp").style.background = "#202020";
         document.getElementById("iqp").style.color = "#ffffff" ;
@@ -97,6 +98,7 @@ function main(){
         this.style.background = "#41ead4";
         this.style.color = "#202020";
         this.style.border = "1px solid #ffffff";
+        this.style.fontWeight = "600";
 
         document.getElementById("mqp").style.background = "#202020";
         document.getElementById("mqp").style.color = "#ffffff" ;
