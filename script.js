@@ -82,20 +82,16 @@ function main(){
     switch (id) {
       case "mqp":
         this.makeTeal();
-        
-
-        document.getElementById("iqp").style.background = "#202020";
-        document.getElementById("iqp").style.color = "#ffffff" ;
-        document.getElementById("iqp").style.border = "1px solid #41ead4";
-
+        makeNormal("iqp");
+      
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
         ogText.style.display = "none";
         break;
       case "iqp":
         this.makeTeal();
-
-
+        makeNormal("mqp");
+      
         document.getElementById("mqp").style.background = "#202020";
         document.getElementById("mqp").style.color = "#ffffff" ;
         document.getElementById("mqp").style.border = "1px solid #41ead4";
@@ -107,25 +103,46 @@ function main(){
         break;
       case "ai":
         this.makeTeal();
+        makeNormal("softeng");
+        makeNormal("algo");
+        makeNormal("dviz");
+        makeNormal("wbwr");
+    
         document.getElementById("text1").innerHTML = "This is about AI";
         break;
       case "algo":
         this.makeTeal();
+        makeNormal("softeng");
+        makeNormal("ai");
+        makeNormal("dviz");
+        makeNormal("wbwr");
 
         document.getElementById("text1").innerHTML = "This is about ALGORITHMS";
         break;
       case "dviz":
         this.makeTeal();
+        makeNormal("softeng");
+        makeNormal("ai");
+        makeNormal("algo");
+        makeNormal("wbwr");
 
         document.getElementById("text1").innerHTML = "This is about DATA VIZ";
         break;
       case "wbwr":
         this.makeTeal();
+        makeNormal("softeng");
+        makeNormal("algo");
+        makeNormal("dviz");
+        makeNormal("ai");
 
         document.getElementById("text1").innerHTML = "This is about WEBWARE";
         break;
       case "softeng":
       this.makeTeal();
+      makeNormal("ai");
+      makeNormal("algo");
+      makeNormal("dviz");
+      makeNormal("wbwr");
 
 
         document.getElementById("text1").innerHTML = "This is about SOFT ENG";
@@ -141,6 +158,8 @@ function makeTeal(){
   this.style.color = "#202020";
   this.style.border = "1px solid #ffffff";
 }
-function makeNormal(){
-
+function makeNormal(id){
+  document.getElementById(id).style.background = "#202020";
+  document.getElementById(id).style.color = "#ffffff" ;
+  document.getElementById(id).style.border = "1px solid #41ead4";
 }
