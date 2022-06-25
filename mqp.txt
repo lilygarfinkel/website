@@ -1,3 +1,0 @@
-The Major Qualifying Project is the senior capstone research project at WPI. 
-My project was entitled "Deep Learning for Mental Health Screening Using Smartphone Data", and took place throughout both semesters of my senior year. The goal of this project was to test the accuracy of many different learning models' ability to predict depression diagnoses based on a patient's text message content. On this project team, I was primarily responsible for implementing natural language processing and sentiment analysis technigues to analyze the messages, and streamlining and fixing the data pipeline for the project. 
-Below is the final poster presentation for this project. To read more about it or the final paper, click on the button to be redirected to WPI's project database!  
