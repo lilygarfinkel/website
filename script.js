@@ -80,9 +80,8 @@ function main(){
     var id = this.id;
     switch (id) {
       case "mqp":
-        var content = openFile("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt").then(content => {
-          return console.log(content);
-        });
+        var content = openFile("https://raw.githubusercontent.com/lilygarfinkel/website/gh-pages/mqp.txt");
+        console.log(content);
         document.getElementById("text").innerHTML = content;
         mqpdiv.style.display = "block";
         iqpdiv.style.display = "none";
@@ -114,9 +113,19 @@ function main(){
 });
 
 }
-  async function openFile(file) {
-  return fetch(file).then(r => { return r.text();})
-     
-  };
+function openFile(file) {
+  
+  var txtFile = new XMLHttpRequest();
+  txtFile.open("GET", file, true);
+  txtFile.onreadystatechange = function() {
+    if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+      if (txtFile.status === 200) {  // Makes sure it's found the file.
+        allText = txtFile.responseText;
+       // lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+      }
+    }
+  }
+  txtFile.send(null);
+  return allText;
 
-
+}
